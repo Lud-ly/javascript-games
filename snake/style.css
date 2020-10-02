@@ -1,0 +1,31 @@
+
+h1,h2{
+    font-family: cursive;
+    text-shadow: 1px 1px 1px #000;
+    margin-left: 70px;
+    color: aliceblue;
+    
+}
+span{
+    color: chartreuse;
+}
+canvas{
+    background: url(images/Background.jpg);
+}
+
+footer
+{
+    background-color: floralwhite;
+}
+
+.copyright
+{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 30px;
+    color: #444;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}

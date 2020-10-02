@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+
+<head>
+	<title>HumanVsAlien</title>
+	<meta charset="utf-8">
+	<link href="invasion.css" rel="stylesheet" type="text/css">
+	<script src="index.js" type="text/javascript"></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    
+</head>
+<header>
+	<a href="/index.html" class="back">retour accueil</a>
+	<div id='dg_point'>
+	   Score : <span id='point'> 0</span>
+	    Temps : <span id='tmp'> 00:00</span>
+		Vie : <span id='nbr_vie'> 3</span>
+		<audio controls="controls">
+		
+			<source src="res/son/Gambi.mp3" type="audio/mpeg">
+		  </audio>
+	</div>
+</header>
+<body>
+    
+ <div id='dvg_jeux'>
+ <div id='menu' style="background: url(res/espace.gif);">	
+ <div onclick='c_parti(this,"vie")' >mode : survie</div>
+ <div onclick='c_parti(this,"double")'>mode : +kills / -temps</div>
+ <div onclick='c_parti(this,"ennemy")' >mode : ++ ennemy </div>
+ <div onclick='c_parti(this,"vitesse")'>mode : ++ vitesses </div>
+     <br/>
+ <span>
+ nbr d'enemi <input aria-label="" type='texte' id='nbr_soucoupe' value=15 style='width:20px;'></input>
+ 
+vitesse aleatoire <input id='vt_aleatoire' type='checkbox' style='width:20px;'></input>
+ 
+laser auto <input type='checkbox' id='laser_auto' checked='checked' style='width:20px;'></input>
+ 
+vitesse enemi au demarrage <input type='texte' id='nbr_vitesse' value=4 style='width:20px;'></input>
+ 
+nombre de vie <input type='texte' id='duree_partie' value=3 style='width:20px;'></input>
+</span>
+ 
+ </div>
+ </div>
+ <h1 style="background: url(res/espace.gif);">'Alien <span class="attack">Attack'</span><img src="res/bonus.png"/></h1>
+	
+ 
+ </body>
+</html>
